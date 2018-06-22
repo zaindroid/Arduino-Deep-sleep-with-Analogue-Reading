@@ -26,7 +26,7 @@ void loop() {
   ADCSRA |= (1 << 7);
   output_value= analogRead(sensor_pin);
   output_value = map(output_value,550,0,0,100);
-  Serial.print("Mositure : ");
+  Serial.print("Water Level : ");
   Serial.print(output_value);
   Serial.println("%");
   delay(100);
